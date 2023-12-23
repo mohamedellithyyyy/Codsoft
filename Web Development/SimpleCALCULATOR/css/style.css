@@ -1,0 +1,76 @@
+/* Importing font */
+@import url(../fonts/DS-DIGI.TTF);
+
+/* Styling for the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Adding overall margin-top for the .main section */
+    margin-top: 150px;
+}
+
+/* Main container styling */
+.main {
+    /* Adding space at the top */
+    margin-top: 150px;
+}
+
+/* Container for the calculator */
+.container {
+    width: 543px;
+    height: 543px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #39F;
+    display: grid;
+    justify-content: space-around;
+}
+
+/* Styling for buttons grid */
+.container .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+}
+
+/* Styling for the calculator screen */
+.main .screen input {
+    width: 480px;
+    height: 100px;
+    flex-shrink: 0;
+    background-color: #CFF;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: -30px; /* Adjusting margin for spacing */
+    color: #000;
+    /* Applying the imported font */
+    font-family: 'DS-DIGI.TTF';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Styling for text inside spans */
+span {
+    color: #FFF;
+    /* Using a different font */
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Styling for calculator buttons */
+button {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 20px;
+    background: #36C;
+    margin-left: 100px; /* Adjusting margin for spacing */
+}
